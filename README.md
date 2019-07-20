@@ -1,19 +1,21 @@
+vertx run src/main/java/io/vertx/example/web/rest/SimpleREST.java
+
 En premier j'ai essayé de lister les différentes routes de l'API pour me faire une idée du projet :
 * lister les messages
-GET /communication_diary/teachers/messages
+GET /teachers/messages
 * voir le détails d’un message
-GET /communication_diary/teachers/messages/id
+GET /teachers/messages/id
 * diffuser un message
-PUT /communication_diary/teachers/messages
+PUT /teachers/messages
 
 
 En tant que parent :
 * lister les messages
-GET /communication_diary/parents/messages
+GET /parents/messages
 * voir le détail d’un message
-GET /communication_diary/parents/messages/id
+GET /parents/messages/id
 * confirmer la lecture d’un message
-PUT /communication_diary/parents/messages/id
+PUT /parents/messages/id
 
 
 Problème d'itération sur l'objet JsonObject. Il s'avère que je regardais des exemples utilisant le JsonOBJECT de Java alors qu'ici c'est celui de Vertx qui était utilisé
